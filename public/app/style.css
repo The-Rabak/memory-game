@@ -1,0 +1,76 @@
+:root{
+    --col-row-number: 4;
+    --col-percent: 24%;
+    --card-height: 22vh;
+    --card-width: 21vw;
+}
+
+img{
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    max-height:100%;
+
+}
+.error{
+    width: 100%;
+    color: firebrick;
+    font-weight: bold;
+
+}
+.notifications{
+    height: 100%;
+}
+.card-pick{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    color: white
+}
+.card-pick a{
+    text-decoration: none;
+    color: white;
+}
+.lower-grid{
+    margin: 0 auto;
+}
+.no-opacity{
+    opacity: 0;
+}
+.full-opacity{
+    opacity: 1;
+}
+.card-pick{
+    background-color: firebrick;
+    margin: 0 auto;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    max-width: 85vw;
+}
+.card-pick button{
+    background-color: navy;
+    color: white;
+    border: 0;
+
+}
+
+
+.container{
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(var(--col-row-number),var(--col-percent));
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.card{
+    border: 1px solid black;
+    width: var(--card-width);
+    height: var(--card-height);
+    background-color: gray;
+
+}
